@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../dashboard/css/style_review.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div><button class="back" ><a href="pembelian.html">Back</a></button></div>
+      </header>
+
+      <form autocomplete="off" onsubmit="onFormSubmit()">
+        <div>
+            <label for="nama">Siapakah dirimu?</label>
+            Aku adalah <input type="text" name="nama" id="nama">
+        </div>
+        <div>
+            <label for="komen">Send me your pesan~</label><br>
+            <textarea type="text" name="komen" id="komen" rows="5" cols="50">
+            Tulis uneg-unegmu itu padaku :')
+        </textarea>
+        </div><br>
+    </form>
+        <br>
+    <table class="list" id="storeList">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Review</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+</body>
+</html>

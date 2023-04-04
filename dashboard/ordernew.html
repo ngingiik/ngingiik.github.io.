@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <title>Order-Admin</title>
+    <link type="text/css" rel="stylesheet" href="../dashboard/css/style_order.css">
+</head>
+
+<body>
+    <header>
+        <div><button class="back" ><a href="index.html">Back</a></button></div>
+      </header>
+      <!-- <table>
+        <tr>
+            <td> -->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Kode Order*</label><small class="validation-error hide" id="kodeorderValidationError">This field is required.</small>
+                        <!-- <label class="validation-error hide" id="kodeorderValidationError">This field is required.</label> -->
+                        <input type="text" name="kodeorder" id="kodeorder">
+                    </div>
+                    <div>
+                        <label>Kode Produk</label>
+                        <input type="text" name="kodeproduk" id="kodeproduk">
+                    </div>
+                    <div>
+                        <label>Nama Produk</label>
+                        <input type="text" name="namaproduk" id="namaproduk">
+                    </div>
+                    <div>
+                        <label>Qty</label>
+                        <input type="number" name="qty" id="qty">
+                    </div>
+                    <div>
+                        <label>Price per-item</label>
+                        <input type="text" name="peritem" id="peritem">
+                    </div>
+                    <div>
+                        <label>Total Price</label>
+                        <input type="text" name="total" id="total">
+                    </div>
+                    <div>
+                      <label for="code1">Tipe Delivery</label>
+                      <select id="code1" name="code1" required>
+                        <option value="" disabled selected>Select Tipe Delivery</option>
+                        <option value="Delivery">Delivery</option>
+                        <option value="Pick-up">Self-Pick Up</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="code2">Status</label>
+                      <select id="code2" name="code2" required>
+                        <option value="" disabled selected>Select Status</option>
+                        <option value="Dikemas">Dikemas</option>
+                        <option value="Dikirim">Dikirim</option>
+                      </select>
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            <!-- </td>
+            <td> -->
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Kode Order</th>
+                            <th>Kode Produk</th>
+                            <th>Nama Produk</th>
+                            <th>Qty</th>
+                            <th>Price per-item</th>
+                            <th>Total Price</th>
+                            <th>Tipe Delivery</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            <!-- </td>
+        </tr>
+    </table> -->
+    <script type="text/javascript" src="js_ordernew.js"></script>
+</body>
+</html>

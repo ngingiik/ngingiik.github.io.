@@ -1,0 +1,175 @@
+<!Doctype HTML>
+<html>
+<head>
+	<title>GVO-Admin</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+	
+	<div id="mySidenav" class="sidenav">
+	<p class="logo"><img src="images/logooo.png"></p>
+  <a href="#" class="icon-a"><i class="fa fa-home icons"></i> &nbsp;&nbsp;Home</a>
+  <a href="user.html"class="icon-a"><i class="fa fa-users icons"></i> &nbsp;&nbsp;User Controls</a>
+  <a href="ordernew.html"class="icon-a"><i class="fa fa-shopping-bag icons"></i> &nbsp;&nbsp;Orders</a>
+  <a href="inventory.html"class="icon-a"><i class="fa fa-tasks icons"></i> &nbsp;&nbsp;Inventory</a>
+  <a href="account_admin.html"class="icon-a"><i class="fa fa-user icons"></i> &nbsp;&nbsp;Accounts</a>
+
+</div>
+<div id="main">
+
+	<div class="head">
+		<div class="col-div-6">
+<span style="font-size:30px;cursor:pointer; color: rgb(0, 0, 0);" class="nav"  >&#9776; Dashboard</span>
+<span style="font-size:30px;cursor:pointer; color: rgb(0, 0, 0);" class="nav2"  >&#9776; Dashboard</span>
+</div>
+	
+	<div class="col-div-6">
+	<div class="profile">
+
+		<img src="images/user.png" class="pro-img" />
+		<p>Ini Nama Admin<span>Admin</span></p>
+	</div>
+</div>
+	<div class="clearfix"></div>
+</div>
+
+	<div class="clearfix"></div>
+	<br/>
+	
+	<div class="col-div-3">
+		<div class="box">
+			<p>67<br/><span>Customers</span></p>
+			<i class="fa fa-users box-icon"></i>
+		</div>
+	</div>
+	<div class="col-div-3">
+		<div class="box">
+			<p>37<br/><span>Today Web Visit</span></p>
+			<i class="fa fa-eye box-icon"></i>
+		</div>
+	</div>
+	<div class="col-div-3">
+		<div class="box">
+			<p>99<br/><span>Orders</span></p>
+			<i class="fa fa-shopping-bag box-icon"></i>
+		</div>
+	</div>
+	<!-- <div class="col-div-3">
+		<div class="box">
+			<p>5<br/><span>-</span></p>
+			<i class="fa fa-tasks box-icon"></i>
+		</div>
+	</div> -->
+	<div class="clearfix"></div>
+	<br/><br/>
+	<div class="col-div-8">
+		<div class="box-8">
+		<div class="content-box">
+			<p>ORDER<button class="butt"><a href="ordernew.html">See All</a></button></p>
+			<br/>
+			<table>
+  <tr>
+    <th>Code Order</th>
+    <th>Code Customer</th>
+    <th>Code Product</th>
+    <th>Total Price</th>
+    <th>Tipe Delivery</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td>OD0135</td>
+    <td>C35</td>
+    <td>TW001</td>
+    <td>€11</td>
+    <td>Delivery</td>
+    <td>Dikemas</td>
+  </tr>
+  <tr>
+    <td>OS0325</td>
+    <td>C25</td>
+    <td>W03</td>
+    <td>€20</td>
+    <td>Delivery</td>
+    <td>Dikirim</td>
+  </tr>
+  <tr>
+    <td>OS05100</td>
+    <td>C100</td>
+    <td>B01</td>
+    <td>€11</td>
+    <td>Self Pick Up</td>
+    <td>Dikemas</td>
+  </tr>
+  <tr>
+    <td>OD1120</td>
+    <td>C20</td>
+    <td>TW001</td>
+    <td>€25</td>
+    <td>Delivery</td>
+    <td>Dikemas</td>
+  </tr>
+</table>
+		</div>
+	</div>
+	</div>
+
+	<!-- <div class="col-div-4">
+		<div class="box-4">
+		<div class="content-box">
+			<p>Target Sale<span>See All</span></p>
+      <p>(Annual)</p>
+
+			<div class="circle-wrap">
+    <div class="circle">
+      <div class="mask full">
+        <div class="fill"></div>
+      </div>
+      <div class="mask half">
+        <div class="fill"></div>
+      </div>
+      <div class="inside-circle"> 70% </div>
+    </div>
+  </div>
+		</div>
+	</div>
+	</div> -->
+		
+	<div class="clearfix"></div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+  $(".nav").click(function(){
+    $("#mySidenav").css('width','70px');
+    $("#main").css('margin-left','70px');
+    $(".logo").css('visibility', 'hidden');
+    $(".logo span").css('visibility', 'visible');
+     $(".logo span").css('margin-left', '-10px');
+     $(".icon-a").css('visibility', 'hidden');
+     $(".icons").css('visibility', 'visible');
+     $(".icons").css('margin-left', '-8px');
+      $(".nav").css('display','none');
+      $(".nav2").css('display','block');
+  });
+
+$(".nav2").click(function(){
+    $("#mySidenav").css('width','300px');
+    $("#main").css('margin-left','300px');
+    $(".logo").css('visibility', 'visible');
+     $(".icon-a").css('visibility', 'visible');
+     $(".icons").css('visibility', 'visible');
+     $(".nav").css('display','block');
+      $(".nav2").css('display','none');
+ });
+
+</script>
+
+</body>
+
+
+</html>
